@@ -11,7 +11,11 @@ labels:
   - StackOverflow
 ---
 
-<img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
+<div class="text-center my-3">
+  <img width="300px" class="rounded pe-4" src="../img/smart-questions/rtfm.png"><br>
+  <img width="300px" class="rounded pe-4" src="https://cdn.theatlantic.com/thumbor/YkbWqaBwhGNnrY6cAjSCQB105fI=/0x102:4792x2598/1200x625/media/img/mt/2023/01/Dumb_Questions_02/original.jpg">
+</div>
+
 
 ## Why Smart Questions Matter
 
