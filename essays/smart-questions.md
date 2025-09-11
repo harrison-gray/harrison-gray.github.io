@@ -59,3 +59,5 @@ The post received 52 responses with the top response receiving thousands of upvo
 
 Understanding how to ask smart questions is essential for anyone interested in Software Engineering as it increases the likelihood of receiving an effective response, while also contributing to the overall knowledge base which may help others with a similar question. The "Not Smart" question was vague, irrelevant, and likely a question they could have found the answer to by using Google. On the contrary, the "Smart" question was clear, specific, and demonstrated attempts to find the answer, encouraging more thoughtful answers. This post received thousands of upvotes and proved to be a helpful resource to many in the community who had a similar question. 
 
+```This essay was grammar checked with ChatGPT.```
+
