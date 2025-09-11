@@ -18,13 +18,6 @@ labels:
 
 
 Before this class, I had mostly worked with Java and some JavaScript, so when we started learning TypeScript I wasn’t really sure what I should expect. At first, it honestly felt like “just JavaScript but stricter where you had to specify every little thing,” but the more I used it, the more I understood why it was so useful. One of the biggest differences is how TypeScript makes you define things clearly, such as the types of variables you are defining or what type a function is supposed to return. At first it just felt like extra work and writing to include with no real purpose, but after writing more than a few lines of code, it really improved the readability of my programs. There was no scenario where I was guessing what something is supposed to be, because it’s right there in the code.
-<div class="text-center my-3">
-  <img
-    width="300px"
-    class="rounded"
-    src="https://wearedevelopers.imgix.net/magazine/articles/554/images/hero/odPaQHSbArSIFzZbUzlE-1740483365.jpeg?w=720&auto=compress,format"
-    alt="Dev Magazine Hero Image">
-</div>
 
 Throughout this module, I definitely learned a lot, especially in regards to the syntax of TypeScript and why it can be so useful. Going through the lengthy TypeScript tutorials felt tedious, but it proved to be very useful for the WOD. A lot of it felt like a review as well, since there are many similarities with JavaScript and having previous programming experience certainly helped with the learning process.
 
