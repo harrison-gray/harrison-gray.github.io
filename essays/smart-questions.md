@@ -3,7 +3,7 @@ layout: essay
 type: essay
 title: "Smart vs. Not-So-Smart Questions"
 # All dates must be YYYY-MM-DD format!
-date: 2015-09-08
+date: 2025-09-10
 published: true
 labels:
   - Questions
