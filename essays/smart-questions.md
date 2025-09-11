@@ -13,87 +13,47 @@ labels:
 
 <img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
 
-## Is there such thing as a stupid question?
+## Why Smart Questions Matter
 
-I’ve had instructors address a whole class and say, “There’s no such thing as a stupid question.” I now know that is in fact not true because I’ve challenged the statement and received the appropriate dumb-stricken, annoyed look. There are definitely stupid questions, and along with that, usually unhelpful answers. Though we all might be guilty of being callous and making people victim to our poorly formed questions, there are steps we can take to ask smarter questions that hopefully don’t illicit the dreaded “rtfm” or “stfw” response.
+In software engineering, communication is just as critical as technical skill. Eric Raymond’s essay How to Ask Questions the Smart Way explains how to engage communities like StackOverflow effectively. A well-formed question respects the reader’s time, demonstrates effort, and clearly defines the problem. Such questions tend to attract high-quality answers, while vague or off-topic questions are often ignored, downvoted, or closed.
 
-## What’s a smart question?
+By examining two StackOverflow questions, one “smart” and one “not so smart”, we can see how these principles play out in real-world interactions.
 
-Stack Overflow, a question and answer site for programmers, is a great resource for anyone who may have issues with code or who may simply want to learn new or different methods of doing something. There I found examples of good questions and bad questions, which could probably be improved.
+## What Defines a "Smart Question"?
+A "Smart Question" is one that provides background information/context while also showing prior effort to solve the issue. Rather than asking broad and vague questions, "Smart Questions" effectively make it as easy to answer as possible for whoever has the proper knowledge. 
 
-In the following example, we examine the components of a decent question. In this case, the asker is trying to figure out a way to get the date of the previous month in Python.
-
+## Example of a "Not Smart" Question
 ```
-Q: python date of the previous month
-
-I am trying to get the date of the previous month with python. Here is what i've tried:
-
-str( time.strftime('%Y') ) + str( int(time.strftime('%m'))-1 )
-
-However, this way is bad for 2 reasons: First it returns 20122 for the February of 2012 (instead of 201202) 
-and secondly it will return 0 instead of 12 on January.
-
-I have solved this trouble in bash with:
-
-echo $(date -d"3 month ago" "+%G%m%d")
-
-I think that if bash has a built-in way for this purpose, then python, much more equipped, should provide something 
-better than forcing writing one's own script to achieve this goal. Of course i could do something like:
-
-if int(time.strftime('%m')) == 1:
-    return '12'
-else:
-    if int(time.strftime('%m')) < 10:
-        return '0'+str(time.strftime('%m')-1)
-    else:
-        return str(time.strftime('%m') -1)
-        
-I have not tested this code and i don't want to use it anyway (unless I can't find any other way:/)
-
-Thanks for your help!
+Q: “Is there a way to alter Chrome's dropdown bookmarks folder list when you press bookmark icon (star) on the address bar or press Ctrl+D and open the dropdown folder list there? Thanks”
 ```
 
-While the heading of his question could be better, it does convey what he’s trying to figure out. Usually something as brief as “python date of previous month” is what other users would enter in as search terms on Google, making it easily found. Another good thing about the question is that it’s not just a question. The asker shows what he or she has done and that he or she has put in some effort to answer the question. And while it may not be as important as the question itself, the asker shows courtesy, which does increase the chance of getting an answer.
+This is a great example of a poor question. This question was downvoted several times and closed within the hour as it breaks several guidelines. For one, this is a question that lacks relevance to programming, which is entirely outside of StackOverflow's scope. Additionally. the user did not provide any information on their prior attempts to fix their issue. The question comes off as vague and lacks context that would make it easier for someone to help.
 
+
+## Example of a "Smart" Question
 ```
-A: datetime and the datetime.timedelta classes are your friend.
+I am trying to print an integer in JavaScript with commas as thousands separators. For example, I want to show the number 1234567 as "1,234,567". How would I go about doing this?
 
-1. find today
-2. use that to find the first day of this month.
-3. use timedelta to backup a single day, to the last day of the previous month.
-4. print the YYYYMM string you're looking for.
+Here is how I am doing it:
 
-Like this:
+>>> function numberWithCommas(x) {
+>>>     x = x.toString();
+>>>     var pattern = /(-?\d+)(\d{3})/;
+>>>     while (pattern.test(x))
+>>>         x = x.replace(pattern, "$1,$2");
+>>>     return x;
+>>> }
+>>>
+>>> console.log(numberWithCommas(1000))
 
- >>> import datetime
- >>> today = datetime.date.today()
- >>> first = datetime.date(day=1, month=today.month, year=today.year)
- >>> lastMonth = first - datetime.timedelta(days=1)
- >>> print lastMonth.strftime("%Y%m")
- 201202
- >>>
-
+Is there a simpler or more elegant way to do it? It would be nice if it works with floats also, but that is not necessary. It does not need to be locale-specific to decide between periods and commas.
 ```
  
-The asker received six possible answers, and he or she was successful in inciting discussion from multiple users. The answers themselves were clear and were devoid of the rumored sarcasm and hostility of “hackers.” Since I myself have referenced this page and found it useful, I can confidently say that it is a good question.
+The post received 52 responses with the top response receiving thousands of upvotes, proving that this was a a great answer to a great question that was helpful to many others. The question is worded clearly and specifically, and defines the desired result. The user also demonstrated previous effort and attempts to solve the issue on their own. The user is looking for improvements to a specific part of their provided code, rather than asking an open-ended question that might be difficult to understand.
 
-## The foolproof way to get ignored.
 
-While there are decent questions that benefit everyone, there are those one can ask to create an entirely different effect. In the following example, a user asks how he would, in short, create a desktop application with Facebook.
-
-```
-Q: Facebook Desktop Notifier
-
-I am a beginner programmer that have never used anything other than what's included in a language.
-
-I am trying to create a desktop application that notifies me anytime I get an update onfacebook. 
-How should go about doing this? Thanks in advance.
-
-edit Sorry I was not clear. Is there any way to make a DESKTOP application with facebook?
-```
-
-A simple “yes” would have answered the question, but we know that’s not the sort of answer he or she is looking for. Fortunately, someone kindly responded with a link to Facebook’s developer website. The asker should have done more research on his or her potential project. Then further down the road, he or she could have asked more specific and detailed questions that wouldn’t require a thousand-paged response for a sufficient answer.
 
 ## Conclusion
 
-When we rely on others’ generosity and expertise to provide answers to our questions, it should hold that the question we ask should be one that leads to efficient and effective help that not only benefits us, but also the people we ask and others who might ask the same question in the future. Thus, if you have a question… make it a smart one! Asking questions may not always get you the best answer, but asking them in a way that will make others want to answer them will increase the success of finding a good solution and make it a positive experience on all sides.
+Understanding how to ask smart questions is essential for anyone interested in Software Engineering as it increases the likelihood of receiving an effective response, while also contributing to the overall knowledge base which may help others with a similar question. The "Not Smart" question was vague, irrelevant, and likely a question they could have found the answer to by using Google. On the contrary, the "Smart" question was clear, specific, and demonstrated attempts to find the answer, encouraging more thoughtful answers. This post received thousands of upvotes and proved to be a helpful resource to many in the community who had a similar question. 
+
