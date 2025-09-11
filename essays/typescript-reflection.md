@@ -27,5 +27,6 @@ What I liked most was how the practice WODs gave me a chance to mess up and lear
 
 No matter how much preparation you do for the WODs, they can definitely still be stressful, especially with the time constraints. Checking the timer while trying to focus and program to the best of your ability isn’t exactly the most helpful. But at the same time, it’s kind of enjoyable once you get into it. There’s a certain satisfaction in finishing a problem faster than the last time you tried it. For me, that mix of challenge and repetition really works as a learning style.
 
-```This essay was grammar checked with ChatGPT.```
 Overall, I feel like I learned two really valuable things from this module. On the technical side, I learned a lot about the syntax and use cases of TypeScript where you can write much more readable code. As for athletic software engineering and the WODs, these gave me a way to train myself to solve problems under pressure. Preparing for and completing the WODs was stressful at times, but also rewarding and I feel that it definitely improves software engineering ability.
+
+```This essay was grammar checked with ChatGPT.```
