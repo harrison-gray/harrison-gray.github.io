@@ -1,15 +1,15 @@
 ---
 layout: project
 type: project
-image: img/micromouse/micromouse-square.jpg
+image: img/micromouse/typinggameicon.png
 title: "Typing Game"
 date: 2024
 published: true
 labels:
-  - Robotics
-  - Arduino
-  - C++
-summary: "My team developed a robotic mouse that won first place in the 2015 UH Micromouse competition."
+  - JavaScript
+  - HTML
+  - CSS
+summary: "Developed a full-stack typing test application enabling users to evaluate their typing speed and accuracy through a responsive web interface."
 ---
 
 <div class="text-center p-4">
