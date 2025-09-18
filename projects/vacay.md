@@ -2,15 +2,14 @@
 layout: project
 type: project
 image: img/vacay/vacay-square.png
-title: "Vacay"
-date: 2015
+title: "Real-Time Chat"
+date: 2025
 published: true
 labels:
-  - Javascript
-  - Meteor
-  - MongoDB
-  - GitHub
-summary: "A responsive web application for travel planning that my team developed in ICS 415."
+  - React
+  - Node.js
+  - Websockets
+summary: "A full-stack chat app enabling real-time messaging over WebSockets with support for multiple users."
 ---
 
 <img class="img-fluid" src="../img/vacay/vacay-home-page.png">
