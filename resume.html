@@ -8,238 +8,167 @@ layout: home
 
     <div class="row">
       <div class="col">
-        <h1 class="display-4 text-center">{{ site.data.bio.basics.name }}</h1>
+        <h1 class="display-4 text-center">Harrison Gray</h1>
       </div>
     </div>
 
     <div class="row">
       <div class="col">
-        {% capture url %}{{ site.data.bio.basics.website }}{% endcapture %}
-        {% capture label %}{{ site.data.bio.basics.website | remove: "http://" | remove: "https://" }}{% endcapture %}
-        <p class="mb-1">{% include about/social.html url=url name='house' label=label %} </p>
-
-        {% capture url %}mailto:{{ site.data.bio.basics.email }}{% endcapture %}
-        {% capture label %}{{ site.data.bio.basics.email }}{% endcapture %}
-        <p class="mb-1">{% include about/social.html url=url name='envelope' label=label %}</p>
-
-        {% for profile in site.data.bio.basics.profiles %}
-          {% capture url %}{{ profile.url }}{% endcapture %}
-          {% capture name %}{{ profile.network | downcase }}{% endcapture %}
-          {% capture label %}{{ profile.username }}{% endcapture %}
-          <p class="mb-1">{% include about/social.html url=url name=name label=label %}</p>
-        {% endfor %}
+        <p class="mb-1">📧 <a href="mailto:harrisongray808@gmail.com">harrisongray808@gmail.com</a></p>
+        <p class="mb-1">🔗 <a href="https://linkedin.com/in/harrison-t-gray">linkedin.com/in/harrison-t-gray</a></p>
+        <p class="mb-1">💻 <a href="https://github.com/harrison-gray">github.com/harrison-gray</a></p>
       </div>
-      <div class="col">
-        <p class="mb-1 text-end">{{ site.data.bio.basics.location.address }}</p>
-        <p class="mb-1 text-end">{{ site.data.bio.basics.location.city }}, {{ site.data.bio.basics.location.region }} {{ site.data.bio.basics.location.postalCode }} {{ site.data.bio.basics.location.countryCode }}</p>
-        <p class="mb-1 text-end">{{ site.data.bio.basics.phone }}</p>
+      <div class="col text-end">
+        <p class="mb-1">916-305-0139</p>
+        <p class="mb-1">Honolulu, HI</p>
       </div>
     </div>
 
+    <!-- Interests -->
     <div class="row pt-4 align-items-center">
       <div class="col-lg-3">
         <h1 class="display-6 text-start m-0">Interests</h1>
       </div>
       <div class="col-lg-9">
-        <p class="m-0">
-          {% for entry in site.data.bio.interests %}
-          {{ entry.name }}
-          <!-- Unfortunately the following must all be on a single line so that there are no spaces before the commas. -->
-          {% if entry.keywords and entry.keywords.size > 0 %}({% for keyword in entry.keywords %}{{ keyword }}{% if forloop.last != true %},{% endif %}{% endfor %}){% endif %}{% if forloop.last != true %}, {% endif %}
-          {% endfor %}
-        </p>
+        <p class="m-0">Software Engineering, Full-Stack Development, Databases, Cloud Computing</p>
       </div>
     </div>
 
-    {% if site.data.bio.skills %}
+    <!-- Skills -->
     <div class="row pt-4 align-items-center">
       <div class="col-lg-3">
         <h1 class="display-6 text-start m-0">Skills</h1>
       </div>
       <div class="col-lg-9">
-        {% for entry in site.data.bio.skills %}
-          <p class="m-0">
-            <b>{{ entry.name }}:</b>
-              {% for keyword in entry.keywords %}
-                {{ keyword }}{% if forloop.last != true %}, {% endif %}
-              {% endfor %}
-          </p>
-        {% endfor %}
+        <p class="m-0"><b>Programming:</b> Java, C#/.NET, TypeScript, React, Node.js, SQL, HTML/CSS</p>
+        <p class="m-0"><b>Tools:</b> Git/Github, Linux, Windows, MacOS, Excel</p>
       </div>
     </div>
-    {% endif %}
 
-    {% if site.data.bio.education %}
+    <!-- Education -->
     <div class="row pt-4 align-items-start">
       <div class="col-lg-3">
         <h1 class="display-6 text-start m-0">Education</h1>
       </div>
       <div class="col-lg-9">
-        {% for entry in site.data.bio.education %}
-          <div class="row mb-3">
-            <div class="col-9">
-              <p class="m-0"><b>{{ entry.institution }}</b></p>
-              <p class="m-0">{{ entry.studyType }}, {{ entry.area }}</p>
-              {% if entry.courses %}
-                <ul>
-                  {% for course in entry.courses %}
-                    <li>{{ course }}</li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-            </div>
-          <div class="col-3">
-            <p class="m-0 text-end">
-              {% if entry.startDate %}
-                {{ entry.startDate | slice: 0,4 }}
-              {% endif %}
-              {% if entry.startDate and entry.startDate != '' and entry.endDate and entry.endDate != '' %}
-              -
-              {% endif %}
-              {% if entry.endDate %}
-                {% if entry.endDate != "Present" %}
-                  {{ entry.endDate | slice: 0,4 }}
-                {% else %}
-                  {{ entry.endDate }}
-                {% endif %}
-              {% endif %}
-            </p>
+        <div class="row mb-3">
+          <div class="col-9">
+            <p class="m-0"><b>University of Hawaii at Manoa</b></p>
+            <p class="m-0">BA, Computer Science</p>
+            <ul>
+              <li>Relevant Coursework: Software Engineering, Calculus II, Discrete Math II, Ethics of Technology</li>
+              <li>Organizations: IT Management Association (Board Member), Association for Computing Machinery</li>
+            </ul>
+          </div>
+          <div class="col-3 text-end">
+            <p class="m-0">Aug. 2023 – May 2027</p>
           </div>
         </div>
-        {% endfor %}
       </div>
     </div>
-    {% endif %}
 
-    {% if site.data.bio.work %}
+    <!-- Work -->
     <div class="row pt-4 align-items-start">
       <div class="col-lg-3">
         <h1 class="display-6 text-start m-0">Work</h1>
       </div>
       <div class="col-lg-9">
-        {% for entry in site.data.bio.work %}
-          <div class="row mb-3">
-            <div class="col-9">
-              <p class="mb-0"><b>{{ entry.position }}, {{ entry.company }}</b></p>
-              <p class="mb-0"><a href="{{ entry.website }}">{{ entry.website | remove: "http://" | remove: "https://" }}</a></p>
-              <p class="mb-0">{{ entry.summary }}</p>
-              {% if entry.highlights %}
-                <ul>
-                  {% for highlight in entry.highlights %}
-                    <li>{{ highlight }}</li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-            </div>
-            <div class="col-3">
-              <p class="m-0 text-end">
-                {% if entry.startDate %}
-                  {{ entry.startDate | slice: 0,4 }}
-                {% endif %}
-                {% if entry.startDate and entry.startDate != '' and entry.endDate and entry.endDate != '' %}
-                -
-                {% endif %}
-                {% if entry.endDate %}
-                {% if entry.endDate != "Present" %}
-                  {{ entry.endDate | slice: 0,4 }}
-                {% else %}
-                  {{ entry.endDate }}
-                {% endif %}
-              {% endif %}
-              </p>
-            </div>
+
+        <div class="row mb-3">
+          <div class="col-9">
+            <p class="mb-0"><b>Software Implementation Intern, FAST Enterprises</b></p>
+            <p class="mb-0">Honolulu, HI</p>
+            <ul>
+              <li>Engineered a new Payment Plan Request feature to support detailed installment schedules and real-time payment tracking.</li>
+              <li>Developed backend features in C# and SQL for the State of Hawaii Department of Taxation’s enterprise tax system.</li>
+              <li>Queried and analyzed databases to identify 8,000+ late tax return submissions.</li>
+              <li>Refactored 2,000+ lines of SQL and C# code, improving maintainability and performance.</li>
+            </ul>
           </div>
-        {% endfor %}
+          <div class="col-3 text-end">
+            <p class="m-0">May 2025 – Aug. 2025</p>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-9">
+            <p class="mb-0"><b>Software Development Intern, Blue Startups</b></p>
+            <p class="mb-0">Honolulu, HI</p>
+            <ul>
+              <li>Developed a full-stack web application using JavaScript, HTML, and CSS to showcase Hawaii’s tech startup ecosystem.</li>
+              <li>Implemented Mapbox API for geospatial visualization with customized markers and interactive layers.</li>
+              <li>Collaborated with developers and presented the final application to accelerator leadership.</li>
+            </ul>
+          </div>
+          <div class="col-3 text-end">
+            <p class="m-0">Mar. 2025 – May 2025</p>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-9">
+            <p class="mb-0"><b>Information Technology Help Desk Consultant, University of Hawaii System</b></p>
+            <p class="mb-0">Honolulu, HI</p>
+            <ul>
+              <li>Provided technical support to students and faculty, resolving hardware, software, and network issues.</li>
+              <li>Assisted with maintaining campus IT infrastructure including networks, servers, and classroom technology.</li>
+            </ul>
+          </div>
+          <div class="col-3 text-end">
+            <p class="m-0">Aug. 2024 – Present</p>
+          </div>
+        </div>
+
       </div>
     </div>
-    {% endif %}
 
-    {% if site.data.bio.volunteer %}
-      <div class="row pt-4 align-items-start">
-        <div class="col-lg-3">
-          <h1 class="display-6 text-start m-0">Activities</h1>
-        </div>
-        <div class="col-lg-9">
-          {% for entry in site.data.bio.volunteer %}
-          <div class="row mb-3">
-            <div class="col-9">
-              <p class="mb-0"><b>{{ entry.position }}{% if entry.organization %}, {{ entry.organization }}{% endif %}</b></p>
-              <p class="mb-0"><a href="{{ entry.website }}">{{ entry.website | remove: "http://" | remove: "https://" }}</a></p>
-              <p class="mb-0">{{ entry.summary }}</p>
-              {% if entry.highlights %}
-                <ul>
-                {% for highlight in entry.highlights %}
-                  <li>{{ highlight }}</li>
-                {% endfor %}
-              </ul>
-              {% endif %}
-            </div>
-            <div class="col-3">
-              <p class="m-0 text-end">
-                {% if entry.startDate %}
-                  {{ entry.startDate | slice: 0,4 }}
-                {% endif %}
-                {% if entry.startDate and entry.startDate != '' and entry.endDate and entry.endDate != '' %}
-                -
-                {% endif %}
-                {% if entry.endDate %}
-                  {% if entry.endDate != "Present" %}
-                    {{ entry.endDate | slice: 0,4 }}
-                  {% else %}
-                    {{ entry.endDate }}
-                  {% endif %}
-                {% endif %}
-              </p>
-            </div>
+    <!-- Activities -->
+    <div class="row pt-4 align-items-start">
+      <div class="col-lg-3">
+        <h1 class="display-6 text-start m-0">Activities</h1>
+      </div>
+      <div class="col-lg-9">
+        <div class="row mb-3">
+          <div class="col-9">
+            <p class="mb-0"><b>Board Member, IT Management Association</b></p>
+            <p class="mb-0">University of Hawaii at Manoa</p>
           </div>
-          {% endfor %}
+          <div class="col-3 text-end">
+            <p class="m-0">2023 – Present</p>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-9">
+            <p class="mb-0"><b>Member, Association for Computing Machinery</b></p>
+            <p class="mb-0">University of Hawaii at Manoa</p>
+          </div>
+          <div class="col-3 text-end">
+            <p class="m-0">2023 – Present</p>
+          </div>
         </div>
       </div>
-    {% endif %}
+    </div>
 
-    {% if site.data.bio.awards %}
+    <!-- Awards -->
     <div class="row pt-4 align-items-start">
       <div class="col-lg-3">
         <h1 class="display-6 text-start m-0">Awards</h1>
       </div>
-
       <div class="col-lg-9">
-      {% for entry in site.data.bio.awards %}
-        <div class="row mb-3">
-          <div class="col-9">
-            <p class="mb-0">
-              <b>{{ entry.title }}</b>, {{ entry.awarder }}
-            </p>
-            <p class="mb-0">{{ entry.summary }}</p>
-          </div>
-          <div class="col-3">
-            <p class="m-0 text-end">
-              {{ entry.date}}
-            </p>
-          </div>
-        </div>
-        {% endfor %}
+        <!-- No awards listed yet -->
+        <p class="mb-0">Dean's Honor List</p>
       </div>
     </div>
-    {% endif %}
 
-    {% if site.data.bio.references %}
+    <!-- References -->
     <div class="row pt-4 align-items-center">
       <div class="col-lg-3">
         <h1 class="display-6 text-start m-0">References</h1>
       </div>
-
       <div class="col-lg-9">
-        <p class="m-0">
-          {% for entry in site.data.bio.references %}
-            {{ entry.name }}
-            {% if entry.reference and entry.reference.size > 0 %}
-              <em>{{ entry.reference }}</em>
-            {% endif %}
-          {% endfor %}
-        </p>
+        <p class="m-0">Available upon request</p>
       </div>
     </div>
-    {% endif %}
+
   </div>
 </div>
