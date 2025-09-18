@@ -12,16 +12,8 @@ labels:
 summary: "A full-stack chat app enabling real-time messaging over WebSockets with support for multiple users."
 ---
 
-<img class="img-fluid" src="../img/vacay/vacay-home-page.png">
+<img class="img-fluid" src="../img/vacay/chatsc">
 
-Vacay is a web application that I helped create as a team project in ICS 415, Spring 2015. The project helped me learn how to design and implement a responsive web site.
+The Real-Time Chat Application is a full-stack personal project built to explore real-time communication technologies using React, Node.js, and WebSockets. The application allows multiple users to connect simultaneously and exchange messages instantly, with dynamic updates to chat windows as new messages arrive. It supports both group conversations and one-on-one chats, offering a versatile environment for different communication needs. To extend beyond text messaging, I added support for image and file sharing, as well as delivery and read receipts to improve usability. Authentication and session management were integrated to ensure that conversations remained secure, and chat history could be retrieved whenever a user returned.
 
-Vacay is implemented using [Meteor](http://meteor.com), a JavaScript application platform. Within two weeks, we created a website that implements several types of reservations including flights, hotels, and car rentals.
-
-In this project I gained experience with full-stack web application design and associated technologies, including [MongoDB](http://mongodb.com) for database storage, the [Twitter Bootstrap](http://getbootstrap.com/) CSS Framework for the user interface, and Javascript for both client and server-side programming. 
-
-Here is some example code to illustrate Simple Schema use:
-
-{% gist 9defa1fb3f4eb593ba5fa9eacedca960 %}
- 
-Source: <a href="https://github.com/theVacay/vacay">theVacay/vacay</a>
+I designed and developed the project end-to-end, starting with setting up a Node.js server to handle WebSocket connections and efficiently route messages between clients. On the front end, I built a responsive React interface that displayed real-time updates, managed multiple active chats, and incorporated features like read receipts and file previews. I also implemented secure authentication and database integration to store user accounts and persistent chat records. Throughout the project, I focused on performance and scalability by optimizing socket event handling and ensuring that the system could support multiple users at once without lag. The finished application provided a feature-rich demonstration of real-time web development and gave me practical experience in building secure, scalable, and interactive applications from scratch.
