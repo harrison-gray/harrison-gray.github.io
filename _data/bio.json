@@ -122,7 +122,15 @@
       "summary": "Participate in programming, competitions, and professional development."
     }
   ],
-  "awards": [],
+  "awards": [
+  {
+    "title": "Dean's Honor List",
+    "date": "2024",
+    "awarder": "University of Hawaii at Manoa",
+    "summary": "Recognized for academic excellence with a GPA of 3.5 or higher."
+  }
+],
+
   "references": [
     {
       "name": "Available upon request"
