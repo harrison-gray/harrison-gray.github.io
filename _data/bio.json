@@ -6,7 +6,7 @@
     "email": "harrisongray808@gmail.com",
     "phone": "916-305-0139",
     "website": "https://harrison-gray.github.io/",
-    "summary": "I am pursuing a B.A. in Computer Science at the University of Hawaii at Manoa, with an expected graduation date of Spring 2027. My interests include software engineering, game development, and 3D modeling.",
+    "summary": "I am pursuing a B.A. in Computer Science at the University of Hawaii at Manoa, with an expected graduation date of Spring 2027. My interests include game development, full-stack developmne, and entrepreneurship.",
     "location": {
       "address": "",
       "postalCode": "96821",
@@ -28,11 +28,10 @@
     ]
   },
   "interests": [
-    { "name": "Software Engineering" },
+    { "name": "Entrepreneurship" },
     { "name": "Full-Stack Development" },
-    { "name": "Cloud Computing" },
-    { "name": "Artificial Intelligence" },
-    { "name": "Data Visualization" }
+    { "name": "Software Engineer" },
+    { "name": "3D modeling" }
   ],
   "skills": [
     {
