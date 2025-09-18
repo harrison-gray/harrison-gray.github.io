@@ -1,113 +1,128 @@
 {
   "basics": {
     "name": "Harrison Gray",
-    "label": "Student",
+    "label": "Computer Science Student",
     "picture": "https://github.com/harrison-gray.png",
-    "email": "htgray@hawaii.edu",
+    "email": "harrisongray808@gmail.com",
     "phone": "916-305-0139",
-    "website": "https://mmaluhia.github.io",
-    "summary": "I am studying for a B.A. in Information and Computer Science in the College of Natural Sciences at the University of Hawaii at Manoa. I expect to graduate in Spring, 2027.",
-    "location": { "address": "", "postalCode": "96821", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "website": "https://maukasystems.io",
+    "summary": "I am pursuing a B.A. in Computer Science at the University of Hawaii at Manoa, with an expected graduation date of Spring 2027. My interests include software engineering, full-stack development, and building applications that solve real-world problems.",
+    "location": {
+      "address": "",
+      "postalCode": "96821",
+      "city": "Honolulu",
+      "countryCode": "USA",
+      "region": "Hawaii"
+    },
     "profiles": [
-      { "network": "github", "username": "harrison-gray", "url": "https://github.com/harrison-gray" },
-      { "network": "linkedin", "username": "harrison-t-gray", "url": "https://www.linkedin.com/in/harrison-t-gray/" }
+      {
+        "network": "github",
+        "username": "harrison-gray",
+        "url": "https://github.com/harrison-gray"
+      },
+      {
+        "network": "linkedin",
+        "username": "harrison-t-gray",
+        "url": "https://www.linkedin.com/in/harrison-t-gray/"
+      }
     ]
   },
   "interests": [
+    { "name": "Software Engineering" },
+    { "name": "Full-Stack Development" },
+    { "name": "Cloud Computing" },
     { "name": "Artificial Intelligence" },
-    { "name": "Robotics" },
-    { "name": "Game Development" },
-    { "name": "Web Design" },
-    { "name": "3D Graphics" }
+    { "name": "Data Visualization" }
   ],
   "skills": [
     {
-      "name": "Languages and Frameworks",
-      "keywords": [ "Java", "JavaScript", "CSS", "HTML", "React", "TypeScript" ]
+      "name": "Programming",
+      "keywords": [ "Java", "C#/.NET", "TypeScript", "React", "Node.js", "SQL", "HTML", "CSS" ]
     },
     {
-      "name": "Toolsets/OS",
-      "keywords": [ "SQL", "Git/GitHub", "Office365", "Tableau" ]
+      "name": "Tools & Platforms",
+      "keywords": [ "Git/GitHub", "Linux", "Windows", "MacOS", "Excel" ]
     }
   ],
   "education": [
     {
-      "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2027)",
-      "studyType": "B.S.",
+      "institution": "University of Hawaii at Manoa, Honolulu, HI",
+      "area": "Computer Science",
+      "studyType": "B.A.",
       "startDate": "2023-08-15",
-      "endDate": "Present",
+      "endDate": "2027-05-15",
       "courses": [
+        "Software Engineering",
+        "Calculus II",
+        "Discrete Math II",
+        "Ethics of Technology"
       ]
     }
   ],
   "work": [
     {
-      "company": "UH Manoa Board of Publications",
-      "position": "Web Developer",
-      "website": "",
-      "startDate": "2015-08-01",
-      "endDate": "Present",
-      "summary": "Head of online presence for Ka Leo",
+      "company": "FAST Enterprises",
+      "position": "Software Implementation Intern",
+      "website": "https://www.fastenterprises.com",
+      "startDate": "2025-05-15",
+      "endDate": "2025-08-15",
+      "summary": "Worked on enterprise tax system development for the State of Hawaii Department of Taxation.",
       "highlights": [
-        "Maintain, update, and oversee official college newspaper website",
-        "Drive, design and build student-community projects for UH Manoa"
+        "Engineered a new Payment Plan Request feature with detailed installment schedules and real-time payment tracking.",
+        "Developed backend features in C# and SQL, enhancing statewide payment processing capabilities.",
+        "Queried and analyzed databases to identify 8,000+ late tax return submissions.",
+        "Refactored 2,000+ lines of SQL and C# code, improving maintainability and reducing runtime errors."
       ]
     },
     {
-      "company": "UH Information Technology Services",
-      "position": "Help Desk Consultant",
-      "website": "http://www.hawaii.edu/its/",
-      "startDate": "2015-01-01",
-      "endDate": "2016-03-15",
-      "summary": "",
+      "company": "Blue Startups (TechCrunch Top 20 Accelerator)",
+      "position": "Software Development Intern",
+      "website": "https://www.bluestartups.com",
+      "startDate": "2025-03-01",
+      "endDate": "2025-05-01",
+      "summary": "Built a full-stack web application to showcase Hawaii’s startup ecosystem.",
       "highlights": [
-        "Troubleshoot software, hardware and networking issues over the phone",
-        "Answer phone and email responses to the ITS Help Desk"
+        "Developed a dataset of 175+ companies and organizations into a responsive web app using JavaScript, HTML, and CSS.",
+        "Implemented Mapbox API for geospatial visualization with custom markers and interactive layers.",
+        "Collaborated with developers and presented the final application to accelerator leadership."
+      ]
+    },
+    {
+      "company": "University of Hawaii System",
+      "position": "Information Technology Help Desk Consultant",
+      "website": "http://www.hawaii.edu/its/",
+      "startDate": "2024-08-01",
+      "endDate": "Present",
+      "summary": "Provided IT support for students, faculty, and campus systems.",
+      "highlights": [
+        "Resolved hardware, software, and network issues while documenting recurring solutions.",
+        "Assisted with maintaining campus IT infrastructure including networks, servers, and classroom technology."
       ]
     }
   ],
   "volunteer": [
     {
-      "organization": "Center for Renewable Energy and Island Sustainability",
-      "website": "http://manoa.hawaii.edu/reis",
-      "position": "Software Developer",
-      "startDate": "2016-01-01",
+      "organization": "IT Management Association",
+      "website": "https://www.itmanoa.org",
+      "position": "Board Member",
+      "startDate": "2023-08-01",
       "endDate": "Present",
-      "summary": "Lead developer for weather sensing project",
+      "summary": "Support student development and networking in IT and management.",
       "highlights": [
-        "Design firmware for distributed weather sensor network",
-        "Maintain custom data collection and storage infrastructure"
+        "Organize career-focused events and professional interaction nights.",
+        "Connect students with industry leaders in Hawaii’s tech community."
       ]
     },
     {
-      "organization": "",
-      "website": "",
-      "position": "Professional organization involvement",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
-      "highlights": [
-        "Chair, ACM Manoa, 2016-Present",
-        "Member, IEEE Student Branch, 2014-Present",
-        "Webmaster/IT Officer, IEEE Student Branch, UH Manoa, 2012-2013"
-      ]
+      "organization": "Association for Computing Machinery",
+      "website": "https://manoa.hawaii.edu",
+      "position": "Member",
+      "startDate": "2023-08-01",
+      "endDate": "Present",
+      "summary": "Participate in programming, competitions, and professional development."
     }
   ],
-  "awards": [
-    {
-      "title": "B+ Scholarship",
-      "date": "2013-Present",
-      "awarder": "State of Hawaii",
-      "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
-    },
-    {
-      "title": "First place",
-      "date": "2015",
-      "awarder": "University of Hawaii Micromouse Competition",
-      "summary": "My team won first place in 2015.  See my portfolio site for more details."
-    }
-  ],
+  "awards": [],
   "references": [
     {
       "name": "Available upon request"
