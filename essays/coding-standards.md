@@ -2,6 +2,7 @@
 layout: essay
 type: essay
 title: "Coding Standards"
+# All dates must be YYYY-MM-DD format!
 date: 2025-09-24
 published: true
 labels:
@@ -10,7 +11,8 @@ labels:
   - Software Engineering
 ---
 
-<img width="300px" class="rounded float-start pe-4" src="[https://cdn.hashnode.com/res/hashnode/image/upload/v1670601136471/9hOqehwVZ.png](https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F6jevsi5g9xn10jkr3p1w.png)">
+<img width="300px" class="rounded float-start pe-4" src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F6jevsi5g9xn10jkr3p1w.png">
+
 
 ## Coding Standards Beyond the Basics  
 
