@@ -1,4 +1,3 @@
-<img width="740" height="493" alt="image" src="https://github.com/user-attachments/assets/a23bd330-3040-415b-b7e2-41481536ae72" />---
 layout: essay
 type: essay
 title: "Design Patterns in Our Final Project"
