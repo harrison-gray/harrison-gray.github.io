@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Effort Estimation Reflection"
+title: "Practical Experience with Effort Estimation"
 date: 2025-12-12
 published: true
 labels:
